@@ -1,0 +1,32 @@
+linters:
+  disable:
+    # Unwanted.
+    - cyclop
+    - depguard
+    - dupword
+    - funlen
+    - gocognit
+    - gocyclo
+    - maintidx
+    - nonamedreturns
+    - wsl
+
+    # Deprecated
+    - deadcode
+    - exhaustivestruct
+    - golint
+    - ifshort
+    - interfacer
+    - maligned
+    - nosnakecase
+    - scopelint
+    - structcheck
+    - varcheck
+  enable-all: true
+
+linters-settings:
+  gci:
+    sections:
+      - Standard
+      - Default
+      - Prefix(github.com/nickbruun/pgsplit)
